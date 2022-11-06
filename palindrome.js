@@ -12,9 +12,9 @@ function checkPalindrome(string) {
 }
 
 // taking inputsssss
-//const string = "tenet";
+const string = "tenet";
 
-const string = prompt("Enter a string to test: ");
+//const string = prompt("Enter a string to test: ");
 
 const value = checkPalindrome(string);
 
