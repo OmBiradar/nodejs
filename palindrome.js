@@ -1,5 +1,10 @@
 // this is a function to test if the string is a palindrome or not
 
+// defining that we require the proompt-sync
+const ps = require("prompt-sync");
+const prompt = ps();
+
+//defining a function to use for checing if the work is a palindrome or not
 function checkPalindrome(string) {
   const len = string.length;
 
@@ -11,11 +16,12 @@ function checkPalindrome(string) {
   return "It is a palindrome";
 }
 
-// taking inputsssss
-const string = "tenet";
+// taking a string input from the user
 
-//const string = prompt("Enter a string to test: ");
+const string = prompt("Enter a string to test: ");
 
+// pushing the user input string into the plindrome check function for checking
 const value = checkPalindrome(string);
 
+// printing the final result of the check by the function
 console.log(value);
